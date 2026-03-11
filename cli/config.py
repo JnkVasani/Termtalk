@@ -31,7 +31,7 @@ class CLIConfig:
 
     @property
     def server_url(self) -> str:
-        return self._data.get("server_url", "http://localhost:8000")
+        return self._data.get("server_url", "https://termtalk-server.onrender.com")
 
     @server_url.setter
     def server_url(self, value: str):
