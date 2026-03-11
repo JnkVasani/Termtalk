@@ -1,0 +1,3 @@
+[console_scripts]
+termtalk = cli.main:main
+termtalk-server = server.main:run
