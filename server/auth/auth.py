@@ -4,8 +4,7 @@ TermTalk Authentication Module
 from datetime import datetime, timedelta
 from typing import Optional
 import bcrypt
-import jwt
-from jwt.exceptions import InvalidTokenError as JWTError
+from jose import JWTError, jwt
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.ext.asyncio import AsyncSession
