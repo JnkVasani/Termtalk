@@ -53,6 +53,15 @@ def run():
         reload=settings.DEBUG,
         log_level="info",
     )
+@app.get("/")
+async def root():
+    return {
+        "service": "TermTalk Server",
+        "version": "1.0.0",
+        "status": "running",
+        "docs": "/docs",
+        "health": "/health"
+    }
 
 
 if __name__ == "__main__":
